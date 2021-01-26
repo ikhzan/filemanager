@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cfiles.ViewFileActivity">
+
+    <ImageView
+        android:id="@+id/fileimage"
+        android:contentDescription="@string/menu_images"
+        android:src="@drawable/ic_baseline_image_24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:contentDescription="@string/menu_images"
+        android:src="@drawable/ic_baseline_back_24"
+        android:padding="16dp"
+        android:layout_gravity="top|start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:contentDescription="@string/menu_images"
+        android:src="@drawable/ic_baseline_share_24"
+        android:layout_gravity="top|end"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

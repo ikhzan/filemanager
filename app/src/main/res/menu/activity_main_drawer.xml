@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_one"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_storages"
+            android:title="@string/action_storages"
+            android:icon="@drawable/ic_baseline_storage_24"
+            />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/action_settings" />
+    </group>
+
+    <group
+        android:id="@+id/menu_two"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_downloads"
+            android:icon="@drawable/ic_baseline_download_24"
+            android:title="@string/menu_downloads" />
+        <item
+            android:id="@+id/nav_images"
+            android:icon="@drawable/ic_baseline_image_24"
+            android:title="@string/menu_images" />
+        <item
+            android:id="@+id/nav_audios"
+            android:icon="@drawable/ic_baseline_audio_24"
+            android:title="@string/menu_audios" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_baseline_video_24"
+            android:title="@string/menu_videos" />
+    </group>
+
+    <group
+        android:id="@+id/menu_three"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_version"
+            android:icon="@drawable/ic_baseline_bookmark_24"
+            android:title="@string/version">
+        </item>
+    </group>
+
+</menu>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/nofilelayout"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:contentDescription="@string/menu_images"
+            android:src="@drawable/ic_baseline_insert_drive_file_24"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:text="@string/nofiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/pathlayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:contentDescription="@string/menu_home"
+            android:id="@+id/homepath"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_home_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/purple_700"
+            android:padding="8dp"
+            android:text="@string/path"
+            android:id="@+id/mPathView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/pathlayout"
+        android:id="@+id/rc_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:scrollbarStyle="insideInset"
+        android:padding="5dp"
+        android:layout_below="@+id/pathlayout"
+        android:id="@+id/default_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:contentDescription="@string/menu_images"
+            android:layout_weight="1"
+            android:id="@+id/gallery"
+            android:src="@drawable/ic_baseline_image_24"
+            android:layout_width="0dp"
+            android:layout_height="36dp"/>
+
+        <ImageView
+            android:contentDescription="@string/menu_audios"
+            android:layout_weight="1"
+            android:id="@+id/audio"
+            android:src="@drawable/ic_baseline_audio_24"
+            android:layout_width="0dp"
+            android:layout_height="36dp"/>
+
+        <ImageView
+            android:contentDescription="@string/menu_videos"
+            android:layout_weight="1"
+            android:id="@+id/videos"
+            android:src="@drawable/ic_baseline_video_24"
+            android:layout_width="0dp"
+            android:layout_height="36dp"/>
+
+        <ImageView
+            android:contentDescription="@string/menu_downloads"
+            android:layout_weight="1"
+            android:id="@+id/downloads"
+            android:src="@drawable/ic_baseline_download_24"
+            android:layout_width="0dp"
+            android:layout_height="36dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/rc_default"
+        android:id="@+id/file_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

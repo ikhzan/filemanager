@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">File Manager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="filename">File Name</string>
+    <string name="filesize">File Size</string>
+    <string name="menu_files">Files</string>
+    <string name="path">Path file</string>
+    <string name="menu_downloads">Downloads</string>
+    <string name="menu_images">Images</string>
+    <string name="menu_audios">Audios</string>
+    <string name="menu_videos">Videos</string>
+    <string name="action_grid">Grid</string>
+    <string name="filetype">File Type</string>
+    <string name="share">Share with friends</string>
+    <string name="rate">Rate Us</string>
+    <string name="version">Version</string>
+    <string name="nofiles">No Files</string>
+    <string name="cancel">Cancel</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="support_text">Do you want to add Text File?</string>
+    <string name="darktheme">Dark Theme</string>
+    <string name="action_storages">Storages</string>
+    <string name="boost">Boost</string>
+    <string name="tips">Tips</string>
+    <string name="media">Media</string>
+    <string name="apps">Apps</string>
+    <string name="quick_clean">Quick Clean</string>
+    <string name="free_space">Free Space</string>
+    <string name="app_size">App Size</string>
+    <string name="enabled">Enabled</string>
+    <string name="used_space">Used Space</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="updateordelete">Do you want to delete or update</string>
+</resources>
