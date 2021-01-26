@@ -12,11 +12,11 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FileBrowser">
+        android:theme="@style/Theme.FileManager">
         <activity
-            android:name="com.ikhzan.filemanager.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.FileBrowser.NoActionBar">
+            android:theme="@style/Theme.FileManager.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,17 +33,21 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+
         <activity
-            android:name="com.ikhzan.filemanager.SettingActivity"
-            android:theme="@style/Theme.FileBrowser.NoActionBar" />
+            android:name=".SettingActivity"
+            android:theme="@style/Theme.FileManager.NoActionBar" />
         <activity
-            android:name="com.ikhzan.filemanager.storages.StoragesActivity"
-            android:theme="@style/Theme.FileBrowser.NoActionBar" />
+            android:name=".storages.StoragesActivity"
+            android:theme="@style/Theme.FileManager.NoActionBar" />
         <activity
-            android:name="com.ikhzan.filemanager.cfiles.ViewFileActivity"
-            android:theme="@style/Theme.FileBrowser.NoActionBar" />
-        <activity android:name="com.ikhzan.filemanager.storages.AppsActivity"
-            android:theme="@style/Theme.FileBrowser.NoActionBar" />
+            android:name=".cfiles.ViewFileActivity"
+            android:theme="@style/Theme.FileManager.NoActionBar" />
+        <activity
+            android:name=".storages.AppsActivity"
+            android:theme="@style/Theme.FileManager.NoActionBar" />
+        <activity android:name=".chat.ChatActivity"
+            android:theme="@style/Theme.FileManager.NoActionBar"/>
     </application>
 
 </manifest>

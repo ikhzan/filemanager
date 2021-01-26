@@ -42,6 +42,11 @@
         android:id="@+id/menu_three"
         android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_baseline_chat_bubble_24"
+            android:title="@string/chat">
+        </item>
+        <item
             android:id="@+id/nav_version"
             android:icon="@drawable/ic_baseline_bookmark_24"
             android:title="@string/version">

@@ -31,6 +31,7 @@ import com.ikhzan.filemanager.storages.StoragesActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
+import com.ikhzan.filemanager.chat.ChatActivity
 import com.snatik.storage.Storage
 import com.snatik.storage.helpers.OrderType
 import java.io.File
@@ -217,6 +218,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_storages -> {
                 val intent = Intent(this, StoragesActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_chat -> {
+                val intent = Intent(this,ChatActivity::class.java)
                 startActivity(intent)
             }
         }

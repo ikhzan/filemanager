@@ -38,4 +38,5 @@
     <string name="free_space">Free Space</string>
     <string name="app_size">App Size</string>
     <string name="enabled">Enabled</string>
+    <string name="chat">Chat</string>
 </resources>
